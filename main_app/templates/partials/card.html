@@ -1,0 +1,51 @@
+{% load static %}
+
+<section class="section reveal load-hidden section-padding">
+    <div class="container">
+        <div class="columns is-variable bd-klmn-columns is-8">
+            <div class="column column1">
+                <h1 class="title">{{ project.name }}</h1>
+                <br>
+                <h2 class="subtitle">{{ project.description}}</h2>
+                
+                <div class="flex-center">
+                <div id="skill-section">
+                    <h1>
+                        <span class="skill-loop">
+                            {% if project.skills.count %}
+                                {% for skill in project.skills.all %}
+                                <a class="skills" href="{% url 'skill_projects' skill.id %}">
+                                    <p>{{ skill.name}}</p>
+                                </a>
+                                {% endfor %}
+                            {% endif %}
+                        </span>
+                    </h1>
+                    <br>
+                </div>
+
+                <div id="button-section">
+                    <a class="button" href = {{ project.url }} target="_blank">View Project</a>
+                    <a class="button" href= {{ project.github }} target="_blank">View The Code</a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="column is-6">
+                <div class="image-container">
+                    <figure class="image is-4by3 image-border">
+                        <a href= {{ project.url }} target="_blank">
+                            <img class="project-img" src=" {{ project.image.url }}">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<script src="js/main.js"></script>

@@ -1,0 +1,131 @@
+:root {
+    --primary-bg-color: #95d6d1;
+    --secondary-bg-color: #421D49;
+    --teriary-bg-color: #20c997;
+    --gray: #818181
+    /* How to use */
+    /* background-color: var(--main-bg-color);` */
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #1D1D1D; 
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: 'PT Serif', serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    color: floralwhite;
+}
+h4 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.errorlist {
+    display: hidden;
+    display: none;
+    color: white;
+}
+
+/* 955- half-screen or less */
+@media screen and (max-width: 955px) {
+    .sidenav {
+        display: none;
+    }
+    .projects-page{
+        padding: 0px;
+    }
+    .section-padding{
+        padding: 0px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .background {
+        display: none; 
+    }
+
+    .about-title {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+}
+
+/* 955+ half of screen or more */
+@media screen and (min-width: 955px) {
+    .background {
+      background-color: lightgray;
+      height: 79px;
+      display: block; 
+  }
+  
+  .about {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+  }
+
+  .about-title {
+      width: 50%;
+      margin-left: 126px;
+      margin-top: 30px;
+  }
+
+  .about-img {
+      width: 50%;
+      text-align: center;
+  }
+  
+  .about-img img {
+      width: 70%;
+  }
+
+  .flex-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-flow: row wrap;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: auto;
+      padding-left: 40px;
+  }
+
+  .about-text {
+      padding-top: 7%;
+  }
+
+}
+
+/* 1080+ super large screen */
+@media screen and (min-width: 955px) {
+    .about-title {
+        margin-top: -100px;
+    }
+}
+
+

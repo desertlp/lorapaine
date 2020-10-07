@@ -1,0 +1,60 @@
+/* got this side bar styling from boostrapis */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #181818;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-bg-color);
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #818181;
+    color: #20c997;
+    color: #421D49;
+    color: var(--primary-bg-color);
+    /* color: var(--secondary-bg-color); */
+    color: var(--teriary-bg-color);
+    /* color: var(--gray); */
+
+
+}
+  
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.footer {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 12px; 
+    padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 955px) {
+    .sidenav {
+        display: none;
+        width: 0px;
+    }
+    .main {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-right: 0px;
+    }
+}

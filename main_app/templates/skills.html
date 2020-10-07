@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Skills (Index) Page</h1>
+<div class="projects-page">
+
+  <div id="lang" class="skill-loop">
+    {% for skill in skills %}
+      {% if skill.skill_type == 'lang' %} 
+        {% include 'partials/skill.html' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="frmwk" class="skill-loop">
+    {% for skill in skills %}
+      {% if skill.skill_type == 'frmwk' %} 
+        {% include 'partials/skill.html' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="db" class="skill-loop">
+    {% for skill in skills %}
+      {% if skill.skill_type == 'db' %} 
+        {% include 'partials/skill.html' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="styl" class="skill-loop">
+    {% for skill in skills %}
+      {% if skill.skill_type == 'styl' %} 
+        {% include 'partials/skill.html' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
+
+
+
+{% endblock %}

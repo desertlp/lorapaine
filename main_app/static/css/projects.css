@@ -1,0 +1,152 @@
+:root {
+    --primary-bg-color: #95d6d1;
+    --secondary-bg-color: #421D49;
+    --teriary-bg-color: #20c997;
+    --gray: #818181
+    /* How to use */
+    /* background-color: var(--main-bg-color);` */
+}
+
+.logo {
+font-family: 'Parisienne', cursive; 
+font-size: 25px !important;
+}
+
+/* about section */
+.about {
+    background-color: lightgray;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about h4 {
+    font-size: 30px; 
+    }
+
+.about p {
+    margin-top: 10px;
+    font-size: 20px; 
+}
+
+.about-img {
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.about-title h4 {
+    color: seagreen;
+}
+
+.about-title {
+    color: white; 
+}
+
+.section {
+    padding: 3rem;
+}
+
+.project-img {
+    width: 90%;
+    height: 35%;
+}
+
+.flex-container {
+    text-align: center;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.contact {
+    text-align: center;
+    padding: 40px;
+    background-color: gray;
+    color: white; 
+}
+
+.skill-loop{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    color: var(--primary-bg-color);
+    color: floralwhite;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--teriary-bg-color);
+    color: var(--primary-bg-color);
+}
+
+#skill
+#skills h1, #projects  {
+    text-align: center;
+    font-size: 30px; 
+}
+
+.title {
+    color: floralwhite;
+}
+.skill-link, 
+.skill {
+    text-decoration: none;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icon {
+    height: 40px !important;
+    width: 40px !important;
+    color: white !important;
+}
+
+.footer-icon:hover {
+    color: black !important;
+}
+
+.image-border {
+    box-shadow:0 4px 8px 0 rgba(146, 145, 145, 0.2), 0 6px 20px 0 rgba(105, 105, 105, 0.19);
+}
+
+.icon-size {
+font-size: 48px;
+}
+
+.image-container {
+position: relative;
+transition: 0.3s ease;
+} 
+
+.image-container:hover {
+opacity: 0.70;
+}
+
+.button {
+    background-color: var(--primary-bg-color);
+}
+
+hr {
+    height:.5px; 
+    width:50%; 
+    border-width:0; 
+    background-color:rgb(66, 66, 66);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
